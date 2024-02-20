@@ -159,8 +159,7 @@ h2{
 }
 
 .showclass{
-    display: block;
-    transition: 0.5s;
+    display: none;
 }
 
 
@@ -169,6 +168,7 @@ h2{
     body{
         overflow-y: scroll;
     }
+    
     a{
         display: none;
     }

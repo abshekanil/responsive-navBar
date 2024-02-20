@@ -5,7 +5,7 @@ let showClass = document.querySelector('.showclass');
 navBtn.addEventListener("click", function() {
     if (window.matchMedia("(max-width: 850px)").matches) {
         // Adjust as per your layout
-        responsive.style.right = 0;
+        showClass.style.display = "block"; 
         showClass.classList.toggle('showclass');
 
     }
@@ -15,5 +15,6 @@ window.addEventListener("resize", function(){
     if(!window.matchMedia("(max-width: 850px)").matches)
     {
         showClass.classList.remove('showclass');
+        showClass.style.display = "none";
     }
 })

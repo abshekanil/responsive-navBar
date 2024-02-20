@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+body{
+    background-image: url('./black.avif');
+    overflow:hidden;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+.logo{
+    width: 200px;
+    height: 90px;
+    position: absolute;
+    top:-10px;
+    left: 10px;
+}
+a{
+    transition: 0.5s;
+    
+}
+a:hover{
+    color: bisque;
+    cursor: pointer;
+    font-size: 25px;
+}
+.porscheImg{
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+}
+.background-container{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    font-family: "Ropa Sans", sans-serif;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+h1:hover{
+    font-size: 80px;
+    
+}
+.firstrow{
+    display: flex;
+
+}
+.cayenne{
+    position: absolute;
+    right: 30px;
+    top: 240px;
+    width: 350px;
+    cursor: pointer;
+    transition: 1s;
+}
+.cayenne:hover{
+    width: 400px ;
+}
+.p911{
+    position: absolute;
+    left: 50px;
+    top: 250px;
+    width: 380px;
+    cursor: pointer;
+    transition: 1s;
+}
+.p911:hover{
+    width: 430px;
+}
+h2{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text911{
+    position: absolute;
+    bottom: 190px;
+    left: 140px;
+    cursor: pointer;
+}
+.text911:hover{
+    color: bisque;
+}
+
+.textcay{
+    position: absolute;
+    right: 100px;
+    bottom: 190px;
+    cursor: pointer;
+    
+}
+.textcay:hover{
+    color: bisque;
+}
+
+.macan{
+    width: 370px;
+    position: absolute;
+    right: 560px;
+    bottom: 220px;
+    cursor: pointer;
+    transition: 1s;
+}
+.macan:hover{
+    width: 400px;
+}
+.textmacan{
+    position: absolute;
+    right: 680px;
+    bottom: 190px;
+    cursor: pointer;
+}
+.textmacan:hover{
+    color: blanchedalmond;
+}
+.navBtn{
+    position: absolute;
+    right: 10px;
+    background-color: black;
+    font-size: 20px;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+}
+.navBtn:hover{
+    opacity: 0.7;
+}
+
+.responsive-class{
+ position: absolute;
+ top: 50px;
+ right: -1450px;
+ background-color:transparent;
+ width: 100%;
+ margin-bottom: 5rem;
+ display: none;
+ 
+}
+.responsive-class li{
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.responsive-class li:hover{
+    font-size: 30px;
+}
+
+.showclass{
+    display: block;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 850px)
+{
+    body{
+        overflow-y: scroll;
+    }
+    a{
+        display: none;
+    }
+
+    .navBtn{
+        right: 30px;
+        display: block;
+    }
+
+    h1{
+        font-size: 30px;
+        left: 150px;
+    }
+    h1:hover{
+        font-size: 40px;
+    }
+
+    .p911{
+        top: 180px;
+        width: 200px;
+        left: 150px;
+    }
+    .p911:hover{
+        width: 230px;
+    }
+
+    .text911{
+        top: 290px;
+        left: 150px;
+    }
+    .cayenne{
+        top: 500px;
+        width: 200px;
+        left: 150px;
+    }
+    .cayenne:hover{
+        width: 230px;
+    }
+    .textcay{
+        left: 150px;
+        top: 420px ; 
+    }
+    .macan{
+        width: 200px;
+        left: 150px;
+        top: 800px;
+    }
+    .macan:hover{
+        width: 230px;
+    }
+    .textmacan{
+        left: 120px;
+        top: 690px ; 
+    }
+    .showclass{
+        position: absolute;
+        left: 7px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px)
+{
+    .text911{
+        top: 220px;
+    }
+    .p911{
+        top: 330px;
+    }
+    .cayenne{
+        top: 330px;
+    }
+    .textcay{
+        top: 220px;
+    }
+    .macan{
+        right: 30%;
+        top: 50%;
+    }
+    .textmacan{
+        top: 630px;
+        right: 40%;
+    }
+}
